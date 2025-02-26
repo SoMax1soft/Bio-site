@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max1soft</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="monocraft.otf">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="main-container">
+        <div class="container">
+            <div class="top-menu">
+                <a href="https://www.java.com/" target="_blank">
+                    <img src="icons/java-icon.png" alt="Java" class="icon-l">
+                </a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                    <img src="icons/javascript-icon.png" alt="JavaScript" class="icon-l">
+                </a>
+            </div>
+
+            <div class="profile">
+                <div class="profile-pic-container">
+                    <img src="icons/profile-pic.png" alt="Profile Picture" class="profile-pic">
+                </div>
+                <h1 class="text">Max1soft</h1>
+                <p class="typewriter" id="typewriter-text"></p>
+                <div class="social-links">
+                    <a href="https://open.spotify.com/playlist/1BarR9nQCrs5b0kzTO4LTI?si=881ef41e844c4628" target="_blank" class="icon-wrapper">
+                        <img src="icons/spotify-icon.png" alt="Spotify" class="icon">
+                        <span class="tooltip">Spotify</span>
+                    </a>
+                    <a href="https://github.com/SoMax1soft" target="_blank" class="icon-wrapper">
+                        <img src="icons/github-icon.png" alt="GitHub" class="icon">
+                        <span class="tooltips">Github</span>
+                    </a>
+                    <a href="https://t.me/somax1soft" target="_blank" class="icon-wrapper">
+                        <img src="icons/telegram-icon.png" alt="Telegram" class="icon">
+                        <span class="tooltipss">Telegram</span>
+                    </a>
+                    <a href="#" onclick="openDiscordMenu()" class="icon-wrapper">
+                        <img src="icons/discord-icon.png" alt="Discord" class="icon">
+                        <span class="tooltipsss">Discord</span>
+                    </a>
+                    <a href="https://steamcommunity.com/id/SoMax1soft/" target="_blank" class="icon-wrapper">
+                        <img src="icons/steam-icon.png" alt="Steam" class="icon">
+                        <span class="tooltipssss">Steam</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <a href="../projects/projects.html" target="_blank">
+                    <button class="link-btn">Projects</button>
+                </a>
+                
+                <a href="https://t.me/Max1soft">
+                    <button class="link-btn">Order Site</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="custom-music-player-container">
+            <div class="custom-music-player">
+                <div id="song-title"></div>
+                <div class="controls">
+                    <button class="control-btn" id="mute">
+                        <img src="player-icons/speaker-icon.png" alt="Mute" class="control-icon">
+                    </button>
+                    <button class="control-btn" id="prev-song">
+                        <img src="player-icons/left-song.png" alt="Previous" class="control-icon">
+                    </button>
+                    <button class="control-btn" id="play-pause">
+                        <img src="player-icons/play-button.png" alt="Play/Pause" class="control-icon">
+                    </button>
+                    <button class="control-btn" id="next-song">
+                        <img src="player-icons/right-song.png" alt="Next" class="control-icon">
+                    </button>
+                    <div class="track-info">
+                        <span id="current-time">0:00</span>
+                        <input type="range" id="seek-bar" value="0" max="100" step="1">
+                        <span id="duration">0:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="discord-menu" id="discord-menu">
+            <div class="discord-menu-content">
+                <p>Discord: somax1softss</p>
+                <button onclick="closeDiscordMenu()">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
