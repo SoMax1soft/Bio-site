@@ -2,6 +2,10 @@
 
 A simple bio website showcasing basic skills in HTML, CSS, and JavaScript. This site provides information about me, my interests, and projects. It features a clean design and interactive elements.
 
+## 🚩 Deployed Site
+
+	// https://old.max1soft.pw
+
 ## 📝 Description
 
 This project is a minimalist bio website with personal information. It includes:
